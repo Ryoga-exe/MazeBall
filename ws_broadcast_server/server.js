@@ -1,16 +1,7 @@
 const WebSocket = require('ws');
 const http = require('http');
 const express = require('express');
-// const fs = require('fs');
-// const https = require('https');
-
 const port = 8080;
-
-// const options = { 
-//   key : fs.readFileSync('key.pem'),
-//   cert: fs.readFileSync('cert.pem')
-// };
-// const https_server = https.createServer(options, app);
 
 const app = express();
 app.use('/', express.static(__dirname + '/public'));
